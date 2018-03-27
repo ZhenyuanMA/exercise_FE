@@ -169,6 +169,103 @@ body {
   margin: 8px 0 0 0;
 }
 
+.main .container {
+  margin: 20px 0;
+}
+
+.main .container .bg1 {
+  height: 150px;
+  background-image: url("/images/long.png");
+  background-size: 100%;
+  background-attachment: scroll;
+  background-position-y: 50%;
+  background-repeat:no-repeat;
+}
+
+.main .container .bg2 {
+  height: 150px;
+  background-image: url("/images/long2.png");
+  background-size: 100%;
+  background-attachment: scroll;
+  background-position-y: 50%;
+  background-repeat:no-repeat;
+}
+
+.main .container .blue{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 255, 0.8);
+  display: flex;
+  justify-content: center;
+}
+
+.main .container .orange{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 125, 0, 0.8);
+  display: flex;
+  justify-content: center;
+}
+
+.main .container .green{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(100, 255, 0, 0.8);
+  display: flex;
+  justify-content: center;
+}
+
+.main .container .long .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main .container .long .content p {
+  text-transform: uppercase;
+  font-size: 24px;
+  color: white;
+}
+
+.main .container .long .content button {
+  background-color: transparent;
+  color: white;
+  padding: 5px 15px;
+}
+
+.main .container .title {
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 16pt;
+  text-align: center;
+}
+
+.main .container .images {
+  text-align: center;
+  margin: 15px 50px;
+}
+
+.main .container .images img {
+  width: 20%;
+  margin: 5px;
+}
+
+.main .container .motto {
+  text-align: center;
+  margin: 15px 50px;
+}
+
+.main .container .motto .content {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 18pt;
+  margin-bottom: 10px;
+}
+
+.main .container .motto .by {
+  color: rgba(0, 0, 0, 0.7);
+}
+
 .footer {
   width: 100%;
   height: auto;
