@@ -8,13 +8,15 @@ body {
   position: fixed;
   width: 100%;
   height: auto;
-  padding: 15pt 60pt;
-  background: white;
+  max-height: 120px;
+  padding: 20px 80px;
+  background: rgb(255, 255, 255);
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  border-bottom: 1px solid rgb(50, 50, 50);
 }
 
 .header .logo {
@@ -23,12 +25,12 @@ body {
 }
 
 .header .logo img {
-  width: 40pt;
-  height: 40pt;
+  width: 60px;
+  height: 60px;
 }
 
 .header .logo div {
-  margin: 0 10pt;
+  margin: 0 10px;
   font-size: 16pt;
   display: block;
 }
@@ -39,6 +41,7 @@ body {
 
 .header .nav {
   text-align: right;
+  font-size: 14pt;
 }
 
 .header .nav div a:not(:last-child):after{
@@ -48,37 +51,139 @@ body {
 
 .header .top{
   align-self: flex-start;
-  margin-bottom: 5pt;
+  margin-bottom: 5px;
 }
 
 .header .bottom{
   align-self: flex-end;
-  margin-top: 5pt;
+  margin-top: 5px;
 }
 
 .main {
-  padding-top: 80pt;
+  padding-top: 120px;
+  width: 100%;
+  height: auto;
+  background: rgb(255, 255, 255);
 }
 
+.main .top {
+  padding: 15px 100px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
 
+.main .top .newsgroup {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
 
+.main .top .newsgroup .maintitle {
+  width: 100%;
+  font-size: 20pt;
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: bold;
+  margin-left: 15px;
+}
 
+.main .top .newsgroup .news {
+  max-width: 250px;
+  height: auto;
+  margin: 20px 15px;
+}
+
+.main .top .newsgroup .news img {
+  max-width: 250px;
+}
+
+.main .top .newsgroup .news .content {
+  font-size: 10pt;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.main .top .newsgroup .news .more a {
+  font-size: 10pt;
+  color: blue;
+}
+
+.main .top .newsgroup .news .more a:visited{
+  font-size: 10pt;
+  color: blue;
+}
+
+.main .top .events {
+  width: 20%;
+}
+
+.main .top .events .maintitle {
+  width: 100%;
+  font-size: 20pt;
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: bold;
+}
+
+.main .top .events .event {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  margin: 15px 0;
+}
+
+.main .top .events .date {
+  padding-right: 5px;
+}
+
+.main .top .events .date p {
+  margin: 3px;
+}
+
+.main .top .events .date .month {
+  font-size: 10pt;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.main .top .events .date .day {
+  font-size: 14pt;
+  color: rgb(0, 0, 100);
+}
+
+.main .top .events .content {
+  border-left: 2px solid rgb(100, 100, 255);
+  font-size: 10pt;
+  color: rgba(0, 0, 0, 0.6);
+  padding-left: 5px;
+}
+
+.main .top .events p {
+  margin: 8px 0;
+}
+
+.main .top .events p:first-child {
+  margin: 0 0 8px 0;
+}
+
+.main .top .events p:last-child {
+  margin: 8px 0 0 0;
+}
 
 .footer {
   width: 100%;
   height: auto;
-  padding: 15pt 60pt;
+  padding: 15px 60px;
   background: rgb(50, 50, 50);
   box-sizing: border-box;
   margin-top: 10px;
-  border-top: 30px solid rgba(0, 0, 255, 0.75);
+  border-top: 30px solid rgb(0, 0, 200);
   color: rgba(255, 255, 255, 0.8);
   display: flex;
   flex-direction: row;
   align-items: stretch;
   justify-content: space-between;
   font-size: 10pt;
-  line-height: 1.3;
+  line-height: 1.6;
 }
 
 .footer .about {
@@ -90,10 +195,10 @@ body {
 }
 
 .footer .about img{
-  width: 40pt;
-  height: 40pt;
+  width: 60px;
+  height: 60px;
   float: left;
-  margin: 0 15pt 5pt 0;
+  margin: 5px 15px 5px 0;
 }
 
 .footer .groups {
@@ -106,7 +211,7 @@ body {
 
 .footer .group {
   max-width: 150px;
-  margin: 0 10pt;
+  margin: 0 10px;
 }
 
 .footer .group .content {
@@ -114,8 +219,8 @@ body {
 }
 
 .aside {
-  height: 40pt;
-  padding: 5pt 60pt;
+  height: auto;
+  padding: 5px 60px;
   background: rgb(35, 35, 35);
   box-sizing: border-box;
   color: rgba(255, 255, 255, 0.8);
@@ -127,7 +232,7 @@ body {
 }
 
 .aside p {
-  margin: 5pt 0;
+  margin: 5px 0;
 }
 
 .aside .copyright {
