@@ -66,19 +66,71 @@ body {
 
 .footer {
   width: 100%;
-  bottom: 80pt;
+  height: 200pt;
   padding: 15pt 60pt;
-  background: black;
+  background: rgb(50, 50, 50);
   box-sizing: border-box;
-  display: flex;
-  align-items: center;
   margin-top: 10px;
-  border-top: 10px blue;
-  color: white;
+  border-top: 30px solid rgba(0, 0, 255, 0.75);
+  color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-between;
+  font-size: 10pt;
+  line-height: 1.3;
+}
+
+.footer .about {
+  width: 100%;
+}
+
+.footer .about .title {
+  font-size: 16pt;
 }
 
 .footer .about img{
   width: 40pt;
   height: 40pt;
   float: left;
+  margin: 0 15pt 5pt 0;
+}
+
+.footer .groups {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-between;
+  justify-content: flex-end;
+}
+
+.footer .group {
+  width: 20%;
+  margin: 0 10pt;
+}
+
+.footer .group .content {
+  word-break: break-all;
+}
+
+.aside {
+  width: 100%;
+  height: 40pt;
+  padding: 5pt 60pt;
+  background: rgb(35, 35, 35);
+  box-sizing: border-box;
+  color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 10pt;
+}
+
+.aside p {
+  margin: 5pt 0;
+}
+
+.aside .copyright {
+  text-align: right;
 }
