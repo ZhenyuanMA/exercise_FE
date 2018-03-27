@@ -5,7 +5,6 @@ body {
 }
 
 .header {
-  position: fixed;
   width: 100%;
   height: auto;
   max-height: 120px;
@@ -49,18 +48,29 @@ body {
   display: inline-block;
 }
 
-.header .top{
+.header .top {
   align-self: flex-start;
   margin-bottom: 5px;
 }
 
-.header .bottom{
+.header .bottom {
   align-self: flex-end;
   margin-top: 5px;
 }
 
+.carousel .item {
+  width: 70%;
+}
+
+.carousel .item img {
+  width: 100%;
+}
+
+.carousel .active {
+  margin: 0 15%;
+}
+
 .main {
-  padding-top: 120px;
   width: 100%;
   height: auto;
   background: rgb(255, 255, 255);
@@ -169,10 +179,6 @@ body {
   margin: 8px 0 0 0;
 }
 
-.main .container {
-  margin: 20px 0;
-}
-
 .main .container .bg1 {
   height: 150px;
   background-image: url("/images/long.png");
@@ -269,7 +275,7 @@ body {
 .footer {
   width: 100%;
   height: auto;
-  padding: 15px 60px;
+  padding: 15px 80px;
   background: rgb(50, 50, 50);
   box-sizing: border-box;
   margin-top: 10px;
@@ -317,7 +323,7 @@ body {
 
 .aside {
   height: auto;
-  padding: 5px 60px;
+  padding: 5px 80px;
   background: rgb(35, 35, 35);
   box-sizing: border-box;
   color: rgba(255, 255, 255, 0.8);
