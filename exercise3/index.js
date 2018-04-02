@@ -1,11 +1,11 @@
 window.onload = function () {
 
   function active(offset) {
-    if ($(".main").position().left == -480 && offset == 720) {
-      var newLeft = $(".main").position().left + offset - 3600;
+    if ($(".main").position().left == -(imgwidth * 2 / 3) && offset == imgwidth) {
+      var newLeft = $(".main").position().left + offset - imgwidth * itemlistlength;
     }
-    else if ($(".main").position().left == -3360 & offset == -720) {
-      var newLeft = $(".main").position().left + offset + 3600;
+    else if ($(".main").position().left == -(imgwidth * itemlistlength - imgwidth / 3) & offset == -imgwidth) {
+      var newLeft = $(".main").position().left + offset + imgwidth * itemlistlength;
     }
     else {
       var newLeft = $(".main").position().left + offset;
@@ -15,9 +15,12 @@ window.onload = function () {
 
   var timer
 
+  var itemlistlength = $(".item").length - 2
+  var imgwidth = $("img").width()
+
   function play() {
     timer = setInterval(function () {
-      active(-720)
+      active(-imgwidth)
     }, 2000)
   }
 
@@ -36,9 +39,9 @@ window.onload = function () {
   })
 
   $(".pre").click(function () {
-    active(720)
+    active(imgwidth)
   })
   $(".next").click(function () {
-    active(-720)
+    active(-imgwidth)
   })
 }
