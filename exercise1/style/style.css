@@ -181,7 +181,7 @@ body {
 
 .main .container .bg1 {
   height: 150px;
-  background-image: url("/images/long.png");
+  background-image: url("../images/long.png");
   background-size: 100%;
   background-attachment: scroll;
   background-position-y: 50%;
@@ -190,7 +190,7 @@ body {
 
 .main .container .bg2 {
   height: 150px;
-  background-image: url("/images/long2.png");
+  background-image: url("../images/long2.png");
   background-size: 100%;
   background-attachment: scroll;
   background-position-y: 50%;
