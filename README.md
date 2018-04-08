@@ -26,6 +26,14 @@ carousel还出问题，也不打算解决了x
 
 ![img][exercise4]
 
+js的链式调用：exp+1
+
+### exercise5
+2018.4.7-8 用gulp编译一个pug+less写的微信界面 [戳这里预览](https://zhenyuanma.github.io/exercise_FE/exercise5/dist/index.html)
+
+gulp真好玩
+pug真好玩
+less真好玩
 
 
 

@@ -1,0 +1,101 @@
+body {
+  width: 576px;
+  height: 627px;
+  margin: 20px auto;
+  border: 1px solid grey;
+}
+
+button {
+  background-color: transparent;
+}
+
+.header {
+  height: 61px;
+  position: relative;
+
+  .control {
+    height: 22px;
+
+    .top + .min + .max + .close {
+      width: 32px;
+      height: 22px;
+      float: right;
+      margin: 0 0 0 2px;
+    }
+  }
+
+  .name {
+    float: left;
+    margin-left: 10px;
+    height: 31px;
+    width: 196px;
+    text-overflow: ellipsis;
+  }
+
+  .setting {
+    float: right;
+    height: 39px;
+    width: 46px;
+  }
+}
+
+.content {
+  height: 421px;
+
+  .inner {
+    width: 520px;
+    height: 100%;
+    margin: 0 auto;
+  }
+}
+
+.conversation {
+  height: 146px;
+  position: relative;
+
+  .control {
+    padding-top: 6px;
+    height: 36px;
+
+    button {
+      width: 23px;
+      height: 24px;
+    }
+
+    .pic + .file + .cut + .history {
+      float: left;
+      margin: 5px 8px 7px 0;
+    }
+
+    .sound + .video {
+      float: right;
+      margin: 5px 0 7px 8px;
+    }
+
+    .pic {
+      margin-left: 25px;
+    }
+
+    .cut {
+      width: 27px;
+    }
+
+    .video {
+      margin-right: 25px;
+    }
+  }
+
+  .text {
+    height: 60px;
+    width: 520px;
+    margin: 0 auto;
+  }
+
+  .send {
+    position: absolute;
+    width: 68px;
+    height: 25px;
+    right: 29px;
+    bottom: 11px;
+  }
+}
