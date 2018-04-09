@@ -2,23 +2,46 @@ body {
   width: 576px;
   height: 627px;
   margin: 20px auto;
-  border: 1px solid grey;
+  border: 1px solid #c8c8c8;
+  font-size: 12px;
+  font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
 }
 button {
   background-color: transparent;
+  border: none;
+  padding: 0;
 }
 .header {
   height: 61px;
   position: relative;
+  border-bottom: 1px solid #c8c8c8;
+  background-color: #F5F5F5;
 }
 .header .control {
   height: 22px;
 }
-.header .control .top + .min + .max + .close {
+.header .control .top {
+  background: url('img/pin.png') no-repeat;
+}
+.header .control .min {
+  background: url('img/min.png') no-repeat;
+}
+.header .control .max {
+  background: url('img/max.png') no-repeat;
+}
+.header .control .close {
+  background: url('img/close.png') no-repeat;
+}
+.header .control .top,
+.header .control .min,
+.header .control .max,
+.header .control .close {
   width: 32px;
   height: 22px;
   float: right;
   margin: 0 0 0 2px;
+  background-origin: content-box;
+  background-size: 18px;
 }
 .header .name {
   float: left;
@@ -26,14 +49,19 @@ button {
   height: 31px;
   width: 196px;
   text-overflow: ellipsis;
+  font-size: 16px;
 }
 .header .setting {
   float: right;
   height: 39px;
   width: 46px;
+  background: url('img/setting.png') no-repeat;
+  background-origin: content-box;
+  background-size: 32px;
 }
 .content {
   height: 421px;
+  background-color: #F5F5F5;
 }
 .content .inner {
   width: 520px;
@@ -48,31 +76,64 @@ button {
   padding-top: 6px;
   height: 36px;
 }
-.conversation .control button {
-  width: 23px;
-  height: 24px;
-}
-.conversation .control .pic + .file + .cut + .history {
+.conversation .control .pic,
+.conversation .control .file,
+.conversation .control .cut,
+.conversation .control .arrow,
+.conversation .control .history {
   float: left;
   margin: 5px 8px 7px 0;
 }
-.conversation .control .sound + .video {
+.conversation .control .sound,
+.conversation .control .video {
   float: right;
   margin: 5px 0 7px 8px;
 }
 .conversation .control .pic {
   margin-left: 25px;
+  background: url('img/pic.png') no-repeat;
+}
+.conversation .control .file {
+  background: url('img/file.png') no-repeat;
 }
 .conversation .control .cut {
-  width: 27px;
+  margin-right: 0;
+  background: url('img/cut.png') no-repeat;
+  background-origin: content-box;
+  background-size: 4px;
+}
+.conversation .control .arrow {
+  background: url('img/arrow.png') no-repeat;
+}
+.conversation .control .history {
+  background: url('img/history.png') no-repeat;
+}
+.conversation .control .sound {
+  background: url('img/sound.png') no-repeat;
 }
 .conversation .control .video {
   margin-right: 25px;
+  background: url('img/video.png') no-repeat;
+}
+.conversation .control .pic,
+.conversation .control .file,
+.conversation .control .cut,
+.conversation .control .arrow,
+.conversation .control .history,
+.conversation .control .sound,
+.conversation .control .video {
+  width: 23px;
+  height: 24px;
+  background-origin: content-box;
+  background-size: 18px;
 }
 .conversation .text {
   height: 60px;
   width: 520px;
   margin: 0 auto;
+  display: block;
+  border: none;
+  resize: none;
 }
 .conversation .send {
   position: absolute;
@@ -80,4 +141,7 @@ button {
   height: 25px;
   right: 29px;
   bottom: 11px;
+  background-color: #F5F5F5;
+  border: 1px solid #c8c8c8;
+  color: #646464;
 }

@@ -16,7 +16,7 @@ gulp.task('pug', function() {
 });
 
 gulp.task('watch', function () {
-  gulp.watch('./src/*.pug', ['pug']);
+  gulp.watch('./src/**/*.pug', ['pug']);
   gulp.watch('./src/*.less', ['less']);
 });
 
