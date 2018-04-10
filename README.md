@@ -29,15 +29,18 @@ carousel还出问题，也不打算解决了x
 js的链式调用：exp+1
 
 ### exercise5
-2018.4.7-8 用gulp编译一个pug+less写的微信界面 [戳这里预览](https://zhenyuanma.github.io/exercise_FE/exercise5/dist/index.html)
+2018.4.7-9 用gulp编译一个pug+less写的微信界面 [戳这里预览](https://zhenyuanma.github.io/exercise_FE/exercise5/dist/index.html)
 
-gulp真好玩
-pug真好玩
-less真好玩
+其实就是想多尝试一下各种用法
 
+gulp真好玩  
+pug真好玩  
+less真好玩  
 
+### exercise6
+2018.4.10-  就是突然想玩一下SVG相关 [戳这里预览](https://zhenyuanma.github.io/exercise_FE/exercise6/index.html)
 
-
+其实挺没什么的
 
 
 
