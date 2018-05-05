@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Check Your Ticket</title>
+	<link rel="stylesheet" href="../style/index.css">
+	
+</head>
+
+<body>
+	
+	<div class="main">
+		<div class="printer">
+			<div class="background">
+				<div class="dec clearflex">
+					<div class="buttons">
+						<div class="blue"></div>
+						<div class="red"></div>
+					</div>
+					<div class="title">
+						<img src="../static/qrcode.svg" alt="">
+						<span>票码查询</span>
+					</div>
+				</div>
+				<div class="check">
+					<input class="telephone" type="text" placeholder="请输入您的手机号码">
+					<button id="button">GO</button>
+				</div>
+				<div class="output">
+					<div class="paper">
+						<div class="wrapper">
+							<div class="title">请在签到处出示二维码</div>
+							<div class="qrcode">
+								<img src="../static/test.png" width="250px">
+							</div>
+							<div class="idcode">2333 2333</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<script src="../vendor/qrcode.js"></script>
+	<script src="../vendor/jquery.js"></script>
+	<script src="./index.js"></script>
+</body>
+
+</html>

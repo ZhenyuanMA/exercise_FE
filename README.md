@@ -42,6 +42,14 @@ less真好玩
 
 其实挺没什么的
 
+### exercise7
+2018.4.26 一个简单的查票 [戳这里预览](https://zhenyuanma.github.io/exercise_FE/exercise7/index.html)
+
+算是头一次自己尝试后端相关？
+
+
+
+
 
 
 
