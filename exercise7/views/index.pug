@@ -1,0 +1,32 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    title Check Your Ticket
+    link(rel='stylesheet', href='/public/style/index.css')
+  body
+    .main
+      .printer
+        .background
+          .dec.clearflex
+            .buttons
+              .blue
+              .red
+            .title
+              img(src='/public/static/qrcode.svg', alt='')
+              span 票码查询
+          .check
+            input.telephone(type='text', placeholder='请输入您的手机号码')
+            button#button GO
+          .output
+            .paper
+              .wrapper
+                .title 请在签到处出示二维码
+                .qrcode
+                  #qrcode
+                .idcode 
+    script(src='/public/vendor/qrcode.js')
+    script(src='/public/vendor/jquery.js')
+    script(src='/public/index.js')
